@@ -1,0 +1,408 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins';
+  background: #D8DBE2;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+/* NAVBAR
+=========================== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  align-items: center;
+}
+
+.navbar > div {
+  padding: 0 30px;
+  font-size: 20px;
+}
+
+.navbar .menu {
+  margin-right: auto;
+}
+
+.navbar .lang {
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+
+/* SOCIAL MEDIA
+=========================== */
+.media ul {
+  position: absolute;
+  bottom: 250px;
+  left: -140px;
+  transform: rotate(-90deg);
+}
+
+.media ul li {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  display: inline-block;
+  padding: 0 30px;
+}
+
+
+/* TEXT
+=========================== */
+.text {
+  position: absolute;
+  top: 200px;
+  left: 100px;
+  transform: rotate(-90deg);
+}
+
+.text h1 {
+  font-size: 120px;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: -10px;
+  margin-bottom: 20px;
+
+  position: relative;
+  overflow: hidden;
+  height: 150px;
+  width: 600px;
+}
+.text h1 .hidetext {
+  position: absolute;
+}
+
+.text h2 {
+  position: absolute;
+  top: 40px;
+  left: -80px;
+  color: #53599A;
+  z-index: -1;
+  font-size: 150px;
+  font-weight: 600;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+.text h3 {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 1;
+
+  position: relative;
+  overflow: hidden;
+  height: 80px;
+}
+.text h3 .hidetext {
+  position: absolute;
+}
+
+.text p {
+  width: 200px;
+  font-size: 12px;
+  margin-top: 30px;
+  font-weight: 500;
+
+  position: relative;
+  overflow: hidden;
+  height: 110px;
+}
+.text p .hidetext {
+  position: absolute;
+}
+
+
+/* SPONSOR
+=========================== */
+.sponsor {
+  position: absolute;
+  right: 100px;
+  bottom: 100px;
+  text-align: center;
+}
+
+.sponsor img {
+  width: 200px;
+  /*ransform: rotate(-90deg);*/
+}
+
+.sponsor p {
+  margin-top: 20px;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 900;
+  /*transform: rotate(180deg);*/
+}
+
+/* DISTORTION
+=========================== */
+.distortion {
+  width: 580px;
+  height: 720px;
+  position: absolute;
+  right: 300px;
+  bottom: 0;
+}
+
+/* OVERLAY
+=========================== */
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  z-index: 99;
+}
+
+.first {
+  background: #53599A;
+}
+
+.second {
+  background: #53599A;
+  left: 33.3%;
+}
+
+.third {
+  background: #53599A;
+  left: 66.6%;
+}
+
+
+/* card   */
+
+
+.container{
+  position: relative;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+  display: flex;
+  
+}
+.container .card{
+  position: relative;
+  width: 600px;
+  height: 350px;
+  margin: 20px;
+  display: flex;
+  transition: 0.5s;
+  justify-content: flex-start;
+  align-items: center;
+  background: linear-gradient(45deg,black ,#53599A);
+}
+.container .card img{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 400px;
+  transition: 0.5S;
+}
+.container .card:hover img{
+  left: 72%;
+  height: 500px;
+
+}
+.container .card .containt{
+  position: relative;
+  width: 50%;
+  left: 20%;
+  padding: 20px 20px 20px 40px;
+  transition: 0.5s;
+  visibility: hidden;
+}
+.container .card:hover .containt{
+  left: 0;
+  opacity: 1;
+  visibility: visible;
+}
+.container .card .containt h2{
+  color: white;
+  text-transform: uppercase;
+  font-size: 2.2em;
+  line-height: 1em;
+}
+.container .card .containt p{
+  color: black;
+}
+.container .card .containt a{
+  position: relative;
+  color: white;
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: 700;
+}
+@media(max-width:991px){
+  .container .card{
+      width: auto;
+      max-width: 600px;
+      align-items: flex-start;
+  }
+  .container .card:hover{
+      height: 600px;
+  }
+  .container .card:hover img{
+      left: 50%;
+      height: 350px;
+  }
+  .container .card .containt{
+      width: 100%;
+      left: 0;
+      padding: 40%;
+
+  }
+}
+@media(max-width:767px){
+  .container{
+      flex-direction: column-reverse;
+  }
+  .container .card{
+      width: auto;
+      max-width: 600px;
+      margin: 40px 20px;
+
+  }
+}
+@media(max-width:420px){
+  .container .card .containt{
+      padding: 30px;
+  }
+  .container .card:hover img{
+      height: 300px;
+  }
+
+}
+.container#blur.active{
+  filter: blur(20px);
+  pointer-events: none;
+  user-select: none;
+}
+.container a{
+  position: relative;
+  padding: 5px 20px;
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: white;
+  background: black;
+}
+#popup, #popupp{
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 600px;
+  padding: 50px;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, .30);
+  background: black;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+
+
+
+}
+#popup, #popupp h1{
+  color: #53599A;
+}
+#popup.active, #popupp.active{
+  top: 50%;
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+
+}
+
+/* burger */
+
+.asburger{
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-image: url('../image/1a.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 120%;
+  z-index: 2;
+  overflow-y: hidden;
+  transition: 0.5s;
+
+}
+.list-plongeante{
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+
+}
+
+.asburger a{
+  padding: 8px;
+  text-decoration: none;
+  font-size: 30px;
+  color: #53599A;
+  display: block;
+  transition: 0.3s;
+
+}
+
+
+.asburger a:hover, .asburger a:focus {
+  color: whitesmoke;
+}
+
+.burger{
+  color: #53599A;
+  left: 10px;
+  top: 20px;
+  font-size: 50px;
+  cursor: pointer;
+  display: flex;
+  margin-left: 97%;
+}
+.asburger .bouton {
+  top: 20%;
+  right: 50px;
+  font-size: 70px;
+  color: #53599A;
+}
+
+
+
+@media screen and (max-height:600px) {
+
+  .asburger .bouton {
+      font-size: 40px;
+  }
+  .burger{
+     
+      font-size: 40px;
+      
+      
+  }
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
