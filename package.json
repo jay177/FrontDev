@@ -1,0 +1,22 @@
+{
+  "name": "porfolio-jarrel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "hover-effect.umd.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jay177/FrontDev.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jay177/FrontDev/issues"
+  },
+  "homepage": "https://github.com/jay177/FrontDev#readme",
+  "dependencies": {
+    "gsap": "^3.11.4"
+  }
+}

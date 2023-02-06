@@ -389,20 +389,64 @@ ul {
 
 
 
-@media screen and (max-height:600px) {
 
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+
+@media screen and (max-width:500px) {
+
+  .text{
+    top: 120px;
+    left: 60px;
+    transform: none;
+    max-width: 450px;
+  }
+
+  
+  .text h1 {
+    font-size: 80px;
+    height: 150px;
+    width: 450px;
+  }
+  .text h1 .hidetext {
+    position: absolute;
+  }
+  
+  .text h2 {
+
+    top: 40px;
+    left: 45px;
+    font-size: 100px;
+  }
+
+  .text p{
+    left: 70px;
+  }
+
+
+  .asburger{
+    background: #000001 ;
+    opacity: 80%;
+    
+  }
   .asburger .bouton {
       font-size: 40px;
   }
   .burger{
      
       font-size: 40px;
+      margin-left: auto;
+     
       
       
   }
-}
 
-a{
-  text-decoration: none;
-  color: inherit;
+
+  body{
+    width: 500px;
+  }
 }

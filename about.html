@@ -31,7 +31,7 @@
         <a href="#" onclick="toggle()">more info</a>
 
      </div>
-     <img src="images/my2.png" alt="">
+     <img class="i" src="images/my2.png" alt="">
   </div>
  
 </div>
@@ -51,6 +51,14 @@
   </div>
 
 
-       <script type="text/javascript" src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/Draggable.min.js"></script>
+       <script>
+        gsap.registerPlugin(Draggable);
+    
+    
+        Draggable.create(".i", { bounds: "body" });
+      </script>
+  <script src="script.js"></script>
 </body>
 </html>
