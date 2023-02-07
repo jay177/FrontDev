@@ -400,13 +400,15 @@ a{
 @media screen and (max-width:500px) {
 
   .text{
-    top: 120px;
-    left: 60px;
+    top: 15%;
+    left: 10%;
     transform: none;
     max-width: 450px;
   }
 
-  
+  .sponsor{
+    bottom: 10%;
+  }
   .text h1 {
     font-size: 80px;
     height: 150px;
