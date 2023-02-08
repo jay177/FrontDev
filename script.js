@@ -27,15 +27,5 @@ function togglee(){
   popupp.classList.toggle('active');
 }
 
-document.addEventListener("mousemove", function(e){
-  const bg = document.querySelector('.bg');
-  const yu = document.querySelector('.yu');
-  const content = document.querySelector('.content');
 
-  bg.style.width = 100 + e.pageX/100 + '%';
-  bg.style.height = 100 + e.pageX/100 + '%';
 
-  yu.style.right = 100 + e.pageX/2 + 'px';
-
-  content.style.left = 100 + e.pageX/3 + 'px';
-})
