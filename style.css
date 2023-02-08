@@ -454,3 +454,67 @@ a{
     width: 500px;
   }
 }
+
+
+@media screen and (max-width:400px) {
+
+  .text{
+    top: 5%;
+    left: 10%;
+    transform: none;
+    max-width: 450px;
+  }
+  .media ul {
+    position: absolute;
+    bottom: 150px;
+    left: -140px;
+    transform: rotate(-90deg);
+}
+
+  .sponsor{
+    bottom: 1%;
+    right: 70px;
+  }
+  .text h1 {
+    font-size: 80px;
+    height: 150px;
+    width: 450px;
+  }
+  .text h1 .hidetext {
+    position: absolute;
+  }
+  
+  .text h2 {
+
+    top: 40px;
+    left: 45px;
+    font-size: 100px;
+  }
+
+  .text p{
+    left: 70px;
+  }
+
+
+  .asburger{
+    background: #000001 ;
+    opacity: 80%;
+    
+  }
+  .asburger .bouton {
+      font-size: 40px;
+  }
+  .burger{
+     
+      font-size: 40px;
+      margin-left: auto;
+     
+      
+      
+  }
+
+
+  body{
+    width: 500px;
+  }
+}
