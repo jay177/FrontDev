@@ -399,64 +399,12 @@ a{
 }
 
 
+
+
+
 @media screen and (max-width:500px) {
 
-  .text{
-    top: 15%;
-    left: 10%;
-    transform: none;
-    max-width: 450px;
-  }
 
-  .sponsor{
-    bottom: 10%;
-  }
-  .text h1 {
-    font-size: 80px;
-    height: 150px;
-    width: 450px;
-  }
-  .text h1 .hidetext {
-    position: absolute;
-  }
-  
-  .text h2 {
-
-    top: 40px;
-    left: 45px;
-    font-size: 100px;
-  }
-
-  .text p{
-    left: 70px;
-  }
-
-
-  .asburger{
-    background: #000001 ;
-    opacity: 80%;
-    
-  }
-  .asburger .bouton {
-      font-size: 40px;
-  }
-  .burger{
-     
-      font-size: 40px;
-      margin-left: auto;
-     
-      
-      
-  }
-
-
-  body{
-    width: 500px;
-  }
-}
-
-
-@media screen and (max-width:400px) {
 
   .text{
     top: 5%;
@@ -475,6 +423,12 @@ a{
     bottom: 1%;
     right: 70px;
   }
+  .sponsor img{
+    width: 80%;
+  }
+  .sponsor{
+    width: 50%;
+  }
   .text h1 {
     font-size: 80px;
     height: 150px;
@@ -516,5 +470,18 @@ a{
 
   body{
     width: 500px;
+  }
+
+  .distortion{
+    visibility: hidden;
+  }
+  .text{
+    z-index: 5;
+  }
+  .text h1{
+    font-size: 60px;
+  }
+  .text h2{
+    font-size: 70px;
   }
 }
